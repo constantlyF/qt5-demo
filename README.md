@@ -4,6 +4,11 @@
 
 #  pyuic5.exe -o firstmainWin.py .\ui\firstmainWin.ui
 
+
+# 如何添加的子窗體：直接添加了栅格布局，然后在栅格布局里面添加的子窗体
+# 信号和slot都是直接在designer配置的，动作是自己用代码编写的，一般信号和slot是控制鼠标和键盘事件的
+
+
 objectName，控件对象名称
 geometry，相对坐标系。
 sizePolicy，控件大小策略。
@@ -18,3 +23,31 @@ toolTip，提示信息。
 statusTip，任务栏提示信息 。
 text，控件文本。
 shortcut，快捷键。
+
+
+
+class TabDemo(QTabWidget):
+
+
+差不多就这三个吧
+5.2的tab
+5.4 网页交互
+整个第8章节
+
+简单设计下
+方案1：修改现有的orange
+1 修改app图标及名称
+2 直接启动的
+3 修改登入后显示的图形界面
+    
+
+我先自己做一个
+1 创建一个普通部件
+2 创建登入界面
+3 
+
+
+self.activate_default_config() 添加了一些默认配置 应该是启动的时候显示的应用名称和版本信息等
+
+直接设置按钮--然后调用js
+直接使用tab--然后查看tab是否可以有触发事件
